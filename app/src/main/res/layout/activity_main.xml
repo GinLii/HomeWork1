@@ -45,7 +45,7 @@
         android:id="@+id/edit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Write your felling!"
+        android:hint="Write your feeling!"
         android:maxLines="2"
         android:layout_margin="245dp"
         app:layout_constraintBottom_toBottomOf="parent"

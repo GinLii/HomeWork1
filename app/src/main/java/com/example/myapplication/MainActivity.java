@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -27,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String inputText=editText.getText().toString();
                 tv.setText(inputText);
+                Log.i("MainActivity","onClick: feeling");
                 if(answer.isChecked()){
                     Toast.makeText(MainActivity.this, "谢谢老师！", Toast.LENGTH_SHORT).show();
+                    Log.i("MainActivity","onClick: thanks");
                 }
             }
         });
